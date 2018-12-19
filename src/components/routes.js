@@ -2,6 +2,9 @@ import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import history from '../history';
 
+//Librerias externas
+import ReallySmoothScroll from 'really-smooth-scroll';
+
 //Componentes propios (Publico)
 import Footer from './public/Footer/Footer';
 import Categories from './public/categories/Categories';
