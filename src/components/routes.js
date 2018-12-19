@@ -3,6 +3,7 @@ import { Route, Router } from 'react-router-dom';
 import history from '../history';
 
 //Componentes propios (Publico)
+import Footer from './public/Footer';
 import Categories from './public/categories/Categories';
 import Products from './public/products/Products';
 
@@ -23,16 +24,21 @@ export const makeMainRoutes = () => {
             {/* Rutas Publica */ }
          
 
-                <Route exact path="/" component={ Products} />
-                <Route exact path="/categorias" component={ Categories } />
-                <Route exact path="/productos" component={ Products } />
+            <Route exact path="/" component={ Products} />
+            <Route exact path="/categorias" component={ Categories } />
+            <Route exact path="/productos" component={ Products } />
 
             {/* Rutas Privadas (Login) */ }
             <Route exact path="/login" component = {Login} />
             <Route exact path="/login/usuarios" component={ Users } />
             <Route exact path="/login/categorias" component={ CategoriesLogin } />
             <Route exact path="/login/productos" component={ ProductsLogin } />
+            
 
+
+            {/*Footer*/}
+
+            <Footer />
         </div>
     
       </Router>
