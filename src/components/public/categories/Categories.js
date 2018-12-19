@@ -7,8 +7,8 @@ class Categories extends Component {
     render(){
         return(
             <React.Fragment>
-            <Navegation />
-            
+        
+        <div className="container">
             <div className="row">
                <div className="col s12 m6">
                 <div className="card">
@@ -37,6 +37,7 @@ class Categories extends Component {
                 </div>
               </div>
             </div>
+        </div>   
 
         </React.Fragment>
         )

@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import Navegation from '../navegation/Navegation';
 
 class Products extends Component {
     render(){
         return(
         <React.Fragment>
-            <Navegation />
+        
 
-        <div className="parallax-container">
-            <div className="parallax">
-                <img src="/img/uno.jpg" alt='parallax' />
-            </div>
-            <h2 className="header">Parallax</h2>
-        </div>
+  <div class="row">
+            
+            
+
+  </div>
+
+
+   
+        
+
+
+
+  {/* 
         
         <div className="section white">
             <div className="row container">
@@ -36,7 +42,7 @@ class Products extends Component {
                 </section>
             </div>
         </div>
-
+  */} 
         </React.Fragment>
         )
     }

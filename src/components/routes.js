@@ -3,9 +3,11 @@ import { Route, Router } from 'react-router-dom';
 import history from '../history';
 
 //Componentes propios (Publico)
-import Footer from './public/Footer';
+import Footer from './public/Footer/Footer';
 import Categories from './public/categories/Categories';
 import Products from './public/products/Products';
+import Home from './Home/Home';
+
 
 
 //Componentes propios (Privados)
@@ -18,29 +20,28 @@ import Login from './private/login/Login';
 export const makeMainRoutes = () => {
   return (
       <Router history={history}>
-        <div className="contenedor">
-                
+            <React.Fragment>
 
-            {/* Rutas Publica */ }
-         
+                  {/* Rutas Publica */ }
+              
 
-            <Route exact path="/" component={ Products} />
-            <Route exact path="/categorias" component={ Categories } />
-            <Route exact path="/productos" component={ Products } />
+                  <Route exact path="/" component={ Home} />
+                  <Route exact path="/categorias" component={ Categories } />
+                  <Route exact path="/productos" component={ Products } />
 
-            {/* Rutas Privadas (Login) */ }
-            <Route exact path="/login" component = {Login} />
-            <Route exact path="/login/usuarios" component={ Users } />
-            <Route exact path="/login/categorias" component={ CategoriesLogin } />
-            <Route exact path="/login/productos" component={ ProductsLogin } />
-            
+                  {/* Rutas Privadas (Login) */ }
+                  <Route exact path="/login" component = {Login} />
+                  <Route exact path="/login/usuarios" component={ Users } />
+                  <Route exact path="/login/categorias" component={ CategoriesLogin } />
+                  <Route exact path="/login/productos" component={ ProductsLogin } />
+                  
 
 
-            {/*Footer*/}
+                  {/*Footer*/}
+                  <Footer />
 
-            <Footer />
-        </div>
-    
+
+          </React.Fragment>
       </Router>
   );
 }
