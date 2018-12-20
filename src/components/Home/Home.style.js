@@ -6,13 +6,22 @@ export const Titulo = styles.div`
 `;
 
 export const PanelIcon = styles.div`
-    font-size:1.3em;
     text-align: center;
     height: 10vh;
+    align-items:center;
+    justify-items:center;
+
+    
+   
 `
 
 export const RevelarContenido = styles.div`
     font-size:1em;
-    padding-top: 50px;
+    margin: 0;
+    padding-top:0px;
+    bottom: 0;
+    align-items:center;
+    justify-items:center;
+
     
 `;

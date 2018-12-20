@@ -3,6 +3,33 @@
   position:static;
 }
 
+.logo{
+  margin-top: 50px;
+}
+
+.logo-lm{
+  height: 50px;
+}
+
+.card-panel{
+  margin: 0%;
+  padding-top: 10px;
+}
+
+.card{
+  margin-top: 20%;
+}
+
+.boton{
+  margin-top:20px;
+}
+
+.panel-contact{
+  margin-top: 20%;
+  border-style: double;
+  border:white;
+}
+
 .sk-folding-cube {
     margin: 20px auto;
     width: 40px;
